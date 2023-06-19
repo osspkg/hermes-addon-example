@@ -17,7 +17,7 @@ license:
 
 .PHONY: build
 build:
-	go build -buildmode=plugin -o build/addon.so .
+	go build -buildmode=plugin  -o build/addon.so .
 
 .PHONY: tests
 tests:
@@ -29,3 +29,6 @@ pre-commite: setup lint build tests
 .PHONY: ci
 ci: install setup lint build tests
 
+.PHONY: dev
+dev:
+	go build -buildmode=plugin  -o ./../hermes/addons/example/addon.so .

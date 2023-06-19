@@ -7,7 +7,9 @@ import (
 	"github.com/osspkg/hermes-addons/base"
 )
 
-var HermesAPI api1.Api = &Example{}
+func HermesAPI() api1.Api {
+	return &Example{}
+}
 
 type Example struct {
 }
@@ -17,7 +19,9 @@ func (v *Example) Inject(dic base.DIContainer) error {
 }
 
 func (v *Example) Dependency() []string {
-	return nil
+	return []string{
+		"com.osspkg.database",
+	}
 }
 
 func (v *Example) Up(ctx context.Context) error {

@@ -5,10 +5,6 @@ import (
 	"github.com/osspkg/hermes-addons/base"
 )
 
-func (Example) Schema() uint {
-	return 1
-}
-
 func (Example) PkgName() string {
 	return "com.osspkg.hermes-addon-example"
 }
