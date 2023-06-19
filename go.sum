@@ -1,4 +1,4 @@
-github.com/osspkg/hermes-addons v0.0.0-20230618235340-897a12f4d307 h1:WYvg8KQq0Yi8psFJqjOncrFLSfaG8CUaewIWYnKbmhM=
-github.com/osspkg/hermes-addons v0.0.0-20230618235340-897a12f4d307/go.mod h1:pNfESc2oUuX5idOkWKlqyM7PsNtyPQPtGiSTLYWnXDs=
+github.com/osspkg/hermes-addons v0.0.0-20230619032959-bcfcaa81ff00 h1:RRufEs0PCazoLSqzgqeOgqu/00WIz2/x2P2DXTGrwr8=
+github.com/osspkg/hermes-addons v0.0.0-20230619032959-bcfcaa81ff00/go.mod h1:UalS5Jzb94RLmz0bZPWTM2s56fI2fx8i/N8K/+HVWGU=
 golang.org/x/mod v0.11.0 h1:bUO06HqtnRcc/7l71XBe4WcqTZ+3AH1J59zWDDwLKgU=
 golang.org/x/mod v0.11.0/go.mod h1:iBbtSCu2XBx23ZKBPSOrRkjjQPZFPuis4dIYUhu/chs=

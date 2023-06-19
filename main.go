@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 
+	"github.com/osspkg/hermes-addons/dependency"
+
 	"github.com/osspkg/hermes-addons/api1"
 	"github.com/osspkg/hermes-addons/base"
 )
@@ -20,7 +22,7 @@ func (v *Example) Inject(dic base.DIContainer) error {
 
 func (v *Example) Dependency() []string {
 	return []string{
-		"com.osspkg.database",
+		dependency.Database,
 	}
 }
 
