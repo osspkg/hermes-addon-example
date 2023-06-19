@@ -1,24 +1,23 @@
 package main
 
 import (
-	"github.com/osspkg/hermes-addons/api1"
-	"github.com/osspkg/hermes-addons/base"
+	hermesaddons "github.com/osspkg/hermes-addons"
 )
 
 func (Example) PkgName() string {
 	return "com.osspkg.hermes-addon-example"
 }
 
-func (Example) Version() base.SemVersion {
+func (Example) Version() hermesaddons.SemVersion {
 	return "v0.0.1"
 }
 
-func (Example) GetIcon(size base.IconSize) string {
+func (Example) GetIcon(size hermesaddons.IconSize) string {
 	return "https://avatars.githubusercontent.com/u/134978195?s=200&v=4"
 }
 
-func (Example) Info() api1.Info {
-	return api1.Info{
+func (Example) Info() hermesaddons.Info {
+	return hermesaddons.Info{
 		Name:        "Example App",
 		Author:      "OSSPkg Team",
 		Email:       "hermes@osspkg.com",

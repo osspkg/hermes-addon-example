@@ -4,10 +4,10 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/osspkg/hermes-addons/api1"
+	hermesaddons "github.com/osspkg/hermes-addons"
 )
 
-func (v Example) ACL() api1.ACLGetter {
+func (v Example) ACL() hermesaddons.ACLGetter {
 	//TODO implement me
 	panic("implement me")
 }
@@ -17,7 +17,12 @@ func (v Example) Form(id uint) (json.Marshaler, error) {
 	panic("implement me")
 }
 
-func (v Example) Call(ctx context.Context, id uint, data []byte, user api1.UserGetter) (json.Marshaler, error) {
+func (v Example) Call(ctx context.Context, id uint, data []byte, user hermesaddons.UserGetter) (json.Marshaler, error) {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (v *Example) PipeCall(ctx context.Context, id uint, data []byte) ([]byte, error) {
 	//TODO implement me
 	panic("implement me")
 }

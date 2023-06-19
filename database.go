@@ -1,9 +1,11 @@
 package main
 
-import "github.com/osspkg/hermes-addons/base"
+import (
+	hermesaddons "github.com/osspkg/hermes-addons"
+)
 
-func (Example) Database() []base.DatabaseMigration {
-	return []base.DatabaseMigration{
+func (Example) Database() []hermesaddons.DatabaseMigration {
+	return []hermesaddons.DatabaseMigration{
 		{
 			ID:   "0001",
 			Up:   "",

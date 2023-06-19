@@ -3,20 +3,18 @@ package main
 import (
 	"context"
 
+	hermesaddons "github.com/osspkg/hermes-addons"
 	"github.com/osspkg/hermes-addons/dependency"
-
-	"github.com/osspkg/hermes-addons/api1"
-	"github.com/osspkg/hermes-addons/base"
 )
 
-func HermesAPI() api1.Api {
+func HermesAPI() hermesaddons.Api {
 	return &Example{}
 }
 
 type Example struct {
 }
 
-func (v *Example) Inject(dic base.DIContainer) error {
+func (v *Example) Inject(dic hermesaddons.DIContainer) error {
 	return nil
 }
 
