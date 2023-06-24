@@ -32,3 +32,4 @@ ci: install setup lint build tests
 .PHONY: dev
 dev:
 	go build -buildmode=plugin  -o ./../hermes/addons/example/addon.so .
+	cp -f manifest.json ./../hermes/addons/example/manifest.json
